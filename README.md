@@ -25,7 +25,8 @@ To do list app is an effective way to explore a tech stack. The purpose of this 
 6. Initialize electronize. You should get following response:
 
 
-`C:\Source\Github\todo-electron-netcore\src\todo-e-nc-console\todo-e-nc-web>electronize init
+`
+	C:\Source\Github\todo-electron-netcore\src\todo-e-nc-console\todo-e-nc-web>electronize init
 	
 	Adding our config file to your project...
 	
@@ -92,8 +93,8 @@ Microsoft Windows [Version 10.0.18363.778]
 
 C:\Source\Github\todo-electron-netcore\src\todo-e-nc-console\todo-e-nc-web\obj\Host>npm install
 
-  > core-js@3.6.5 postinstall C:\Source\Github\todo-electron-netcore\src\todo-e-nc-console\todo-e-nc-web\obj\Host\node_modules\core-js
-  > node -e "try{require('./postinstall')}catch(e){}"
+  '> core-js@3.6.5 postinstall C:\Source\Github\todo-electron-netcore\src\todo-e-nc-console\todo-e-nc-web\obj\Host\node_modules\core-js
+  '> node -e "try{require('./postinstall')}catch(e){}"
  
   [96mThank you for using core-js ([94m https://github.com/zloirock/core-js [96m) for polyfilling JavaScript standard library![0m
   
@@ -105,9 +106,9 @@ C:\Source\Github\todo-electron-netcore\src\todo-e-nc-console\todo-e-nc-web\obj\H
   
   [96mAlso, the author of core-js ([94m https://github.com/zloirock [96m) is looking for a good job -)[0m
   
-  > electron@7.2.3 postinstall C:\Source\Github\todo-electron-netcore\src\todo-e-nc-console\todo-e-nc-web\obj\Host\node_modules\electron
+  '> electron@7.2.3 postinstall C:\Source\Github\todo-electron-netcore\src\todo-e-nc-console\todo-e-nc-web\obj\Host\node_modules\electron
   
-  > node install.js
+  '> node install.js
   
 npm notice created a lockfile as package-lock.json. You should commit this file.
 
