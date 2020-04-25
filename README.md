@@ -21,9 +21,9 @@ To do list app is an effective way to explore a tech stack. The purpose of this 
 3. Activate Electron.net calling UseElectron(args) from the web builder in program.cs.
 4. Activate electron window by updating startup.cs. Add bootstrap method and call it from configure.
 5. Install ElectronNET.CLI as global package - Run in windows command prompt:  dotnet tool install ElectronNET.CLI -g
-    a. this should give a message that You can invoke the tool using the following command: electronize. Tool 'electronnet.cli' (version '7.30.2') was successfully installed.
+    - this should give a message that You can invoke the tool using the following command: electronize. Tool 'electronnet.cli' (version '7.30.2') was successfully installed.
 6. Initialize electronize. You should get following response:
-
+`
 	C:\Source\Github\todo-electron-netcore\src\todo-e-nc-console\todo-e-nc-web>electronize init
 	Adding our config file to your project...
 	Search your .csproj to add the needed electron.manifest.json...
@@ -33,15 +33,15 @@ To do list app is an effective way to explore a tech stack. The purpose of this 
 	Search your .launchSettings to add our electron debug profile...
 	Debug profile added!
 	Everything done - happy electronizing!
-
+`
 7. This creates a file electron.menifest.json.
 8. Run: electronize start and wait for some time (only the first electonize start is slode. Next is expected to be faster.) From 1:08 to 1:15 (7 minutes)
--- a. It also runs `npm install` and  `node install.js` They are also intalling something core-js
--- b. Ans here you are. The default asp.net core web page is being shows inside an electron window.
+    - It also runs `npm install` and  `node install.js` They are also intalling something core-js
+    - Ans here you are. The default asp.net core web page is being shows inside an electron window.
 9. You can build the app on CLI:
--- a.electronize build /target win
--- b.electronize build /target osx
--- c.electronize build /target linux
+    - electronize build /target win
+    - electronize build /target osx
+    - electronize build /target linux
 
 
 ### Outoput of running `electronize start` command:
