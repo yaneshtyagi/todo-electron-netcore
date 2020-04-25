@@ -26,14 +26,24 @@ To do list app is an effective way to explore a tech stack. The purpose of this 
 
 `
 	C:\Source\Github\todo-electron-netcore\src\todo-e-nc-console\todo-e-nc-web>electronize init
+	
 	Adding our config file to your project...
+	
 	Search your .csproj to add the needed electron.manifest.json...
+	
 	Found your .csproj: C:\Source\Github\todo-electron-netcore\src\todo-e-nc-console\todo-e-nc-web\todo-e-nc-web.csproj - check for existing config or update it.
+	
 	electron.manifest.json will be added to csproj.
+	
 	electron.manifest.json added in csproj!
+	
 	Search your .launchSettings to add our electron debug profile...
+	
+	
 	Debug profile added!
+	
 	Everything done - happy electronizing!
+	
 `
 
 7. This creates a file electron.menifest.json.
