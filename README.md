@@ -48,8 +48,9 @@ To do list app is an effective way to explore a tech stack. The purpose of this 
 
 ### Outoput of running `electronize start` command:
 
-`
-C:\Source\Github\todo-electron-netcore\src\todo-e-nc-console\todo-e-nc-web>electronize start
+
+
+`C:\Source\Github\todo-electron-netcore\src\todo-e-nc-console\todo-e-nc-web>electronize start
 Start Electron Desktop Application...
 Microsoft Windows [Version 10.0.18363.778]
 (c) 2019 Microsoft Corporation. All rights reserved.
