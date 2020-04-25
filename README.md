@@ -57,11 +57,11 @@ To do list app is an effective way to explore a tech stack. The purpose of this 
     - electronize build /target linux
 
 
-### Outoput of running `electronize start` command:
+### Output of running `electronize start` command:
 
 
 
-`C:\Source\Github\todo-electron-netcore\src\todo-e-nc-console\todo-e-nc-web>electronize start
+`	C:\Source\Github\todo-electron-netcore\src\todo-e-nc-console\todo-e-nc-web>electronize start
 
 Start Electron Desktop Application...
 
