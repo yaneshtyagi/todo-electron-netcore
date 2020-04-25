@@ -23,6 +23,7 @@ To do list app is an effective way to explore a tech stack. The purpose of this 
 5. Install ElectronNET.CLI as global package - Run in windows command prompt:  dotnet tool install ElectronNET.CLI -g
     - this should give a message that You can invoke the tool using the following command: electronize. Tool 'electronnet.cli' (version '7.30.2') was successfully installed.
 6. Initialize electronize. You should get following response:
+
 `
 	C:\Source\Github\todo-electron-netcore\src\todo-e-nc-console\todo-e-nc-web>electronize init
 	Adding our config file to your project...
@@ -34,6 +35,7 @@ To do list app is an effective way to explore a tech stack. The purpose of this 
 	Debug profile added!
 	Everything done - happy electronizing!
 `
+
 7. This creates a file electron.menifest.json.
 8. Run: electronize start and wait for some time (only the first electonize start is slode. Next is expected to be faster.) From 1:08 to 1:15 (7 minutes)
     - It also runs `npm install` and  `node install.js` They are also intalling something core-js
@@ -64,15 +66,15 @@ Start npm install...
 Microsoft Windows [Version 10.0.18363.778]
 (c) 2019 Microsoft Corporation. All rights reserved.
 C:\Source\Github\todo-electron-netcore\src\todo-e-nc-console\todo-e-nc-web\obj\Host>npm install
-> core-js@3.6.5 postinstall C:\Source\Github\todo-electron-netcore\src\todo-e-nc-console\todo-e-nc-web\obj\Host\node_modules\core-js
-> node -e "try{require('./postinstall')}catch(e){}"
+ > core-js@3.6.5 postinstall C:\Source\Github\todo-electron-netcore\src\todo-e-nc-console\todo-e-nc-web\obj\Host\node_modules\core-js
+ > node -e "try{require('./postinstall')}catch(e){}"
 [96mThank you for using core-js ([94m https://github.com/zloirock/core-js [96m) for polyfilling JavaScript standard library![0m
 [96mThe project needs your help! Please consider supporting of core-js on Open Collective or Patreon: [0m
 [96m>[94m https://opencollective.com/core-js [0m
 [96m>[94m https://www.patreon.com/zloirock [0m
 [96mAlso, the author of core-js ([94m https://github.com/zloirock [96m) is looking for a good job -)[0m
-> electron@7.2.3 postinstall C:\Source\Github\todo-electron-netcore\src\todo-e-nc-console\todo-e-nc-web\obj\Host\node_modules\electron
-> node install.js
+ > electron@7.2.3 postinstall C:\Source\Github\todo-electron-netcore\src\todo-e-nc-console\todo-e-nc-web\obj\Host\node_modules\electron
+ > node install.js
 npm notice created a lockfile as package-lock.json. You should commit this file.
 added 174 packages from 169 contributors and audited 262 packages in 208.858s
 4 packages are looking for funding
