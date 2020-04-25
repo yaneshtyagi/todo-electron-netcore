@@ -21,7 +21,7 @@ To do list app is an effective way to explore a tech stack. The purpose of this 
 3. Activate Electron.net calling UseElectron(args) from the web builder in program.cs.
 4. Activate electron window by updating startup.cs. Add bootstrap method and call it from configure.
 5. Install ElectronNET.CLI as global package - Run in windows command prompt:  dotnet tool install ElectronNET.CLI -g
-    - this should give a message that You can invoke the tool using the following command: electronize. Tool 'electronnet.cli' (version '7.30.2') was successfully installed.
+    a. this should give a message that You can invoke the tool using the following command: electronize. Tool 'electronnet.cli' (version '7.30.2') was successfully installed.
 6. Initialize electronize. You should get following response:
 
 	C:\Source\Github\todo-electron-netcore\src\todo-e-nc-console\todo-e-nc-web>electronize init
