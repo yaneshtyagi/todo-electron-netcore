@@ -1,0 +1,32 @@
+{
+  "executable": "todo-e-nc-web",
+  "splashscreen": {
+    "imageFile": ""
+  },
+  "singleInstance": false,
+  "build": {
+    "appId": "com.todo-e-nc-web.app",
+    "productName": "e-nc To Do",
+    "copyright": "Copyright © 2019 Yanesh Tyagi",
+    "buildVersion": "1.0.0",
+    "compression": "maximum",
+    "directories": {
+      "output": "../../../bin/Desktop"
+    },
+    "extraResources": [
+      {
+        "from": "./bin",
+        "to": "bin",
+        "filter": ["**/*"]
+      }
+    ],
+    "files": [
+      {
+        "from": "./ElectronHostHook/node_modules",
+        "to": "ElectronHostHook/node_modules",
+        "filter": ["**/*"]
+      },
+      "**/*"
+    ]
+  }
+}
