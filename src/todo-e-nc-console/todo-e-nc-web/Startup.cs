@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using ElectronNET.API;
+using ElectronNET.API.Entities;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
@@ -59,7 +60,17 @@ namespace todo_e_nc_web
 
         public async void Bootstrap()
         {
-            await Electron.WindowManager.CreateWindowAsync();
-        }
+            var options = new BrowserWindowOptions
+            {
+                Show = false
+            };
+
+        var mainWindow = await Electron.WindowManager.CreateWindowAsync();
+
+            mainWindow.OnReadyToShow += () =>
+            {
+                mainWindow.Show();
+            };
     }
+}
 }

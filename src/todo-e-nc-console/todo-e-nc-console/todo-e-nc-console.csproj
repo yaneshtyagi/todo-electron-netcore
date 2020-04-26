@@ -6,4 +6,8 @@
     <RootNamespace>todo_e_nc_console</RootNamespace>
   </PropertyGroup>
 
+  <ItemGroup>
+    <PackageReference Include="ElectronNET.API" Version="7.30.2" />
+  </ItemGroup>
+
 </Project>
