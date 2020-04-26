@@ -65,12 +65,26 @@ namespace todo_e_nc_web
                 Show = false
             };
 
-        var mainWindow = await Electron.WindowManager.CreateWindowAsync();
+            var mainWindow = await Electron.WindowManager.CreateWindowAsync();
 
             mainWindow.OnReadyToShow += () =>
             {
                 mainWindow.Show();
             };
+
+            var menu = new MenuItem[]
+            {
+                new MenuItem{
+                    Label = "File",
+                    Submenu = new MenuItem[]{
+                        new MenuItem {
+                        Label = "Exit",
+                        Click = () => {Electron.App.Exit(); }
+                        } 
+                    } 
+                }
+            };
+            Electron.Menu.SetApplicationMenu(menu);
+        }
     }
-}
 }
