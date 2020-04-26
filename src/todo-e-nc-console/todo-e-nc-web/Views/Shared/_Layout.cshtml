@@ -86,26 +86,39 @@
             background-color: #000;
         }
 
-        .task-item{
+        .task-item {
             width: 100%;
-            padding:10px;
+            padding: 10px;
         }
 
-        .task-item:hover{
-            background-color: #000;
-        }
+            .task-item:hover {
+                background-color: #000;
+            }
 
-        .task-item-checkbox{
+        .task-item-checkbox {
             padding: 0px 5px;
         }
 
-        .task-item-summary{
+        .task-item-summary {
             padding: 0px 5px;
         }
 
-        .task-item-meta-duration{
-            padding 0px 5px; 
+        .task-item-meta-duration {
+            padding 0px 5px;
             float: right;
+        }
+
+        .my-footer {
+            position: absolute;
+            bottom: 0px;
+            background-color: #111;
+            padding: 0px 5px;
+            width: 100%;
+            height:24px;
+            border-top: solid 1px #222;
+            text-align: left;
+            font-size: 0.7em;
+            vertical-align:middle;
         }
     </style>
 </head>
@@ -140,9 +153,10 @@
         </main>
     </div>
 
-    <footer class="border-top footer text-muted">
-        <div class="container">
-            &copy; 2020 - todo_e_nc_web - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+    <footer class="my-footer">
+        <div class="">
+            &copy; 2020 - Yanesh Tyagi -
+            <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy [Not yet defined!]</a>
         </div>
     </footer>
     <script src="~/lib/jquery/dist/jquery.min.js"></script>

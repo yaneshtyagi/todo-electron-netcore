@@ -62,13 +62,15 @@ namespace todo_e_nc_web
         {
             var options = new BrowserWindowOptions
             {
-                Show = false
+                Show = false,
+                Icon = @"C:\Source\Github\todo-electron-netcore\src\todo-e-nc-console\todo-e-nc-web\wwwroot\img\icon.ico"
             };
 
-            var mainWindow = await Electron.WindowManager.CreateWindowAsync();
+            var mainWindow = await Electron.WindowManager.CreateWindowAsync(options);
 
             mainWindow.OnReadyToShow += () =>
             {
+                mainWindow.SetTitle("Yet Another To Do App [Y-ToDo]");
                 mainWindow.Show();
             };
 
