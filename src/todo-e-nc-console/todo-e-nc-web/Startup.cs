@@ -82,6 +82,15 @@ namespace todo_e_nc_web
                         Click = () => {Electron.App.Exit(); }
                         } 
                     } 
+                },
+
+                new MenuItem
+                {
+                    Label = "Info",
+                    Click = async () =>
+                    {
+                        await Electron.Dialog.ShowMessageBoxAsync("To Do List in Electron.NET. Version: 0.0.0");
+                    }
                 }
             };
             Electron.Menu.SetApplicationMenu(menu);
