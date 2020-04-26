@@ -14,9 +14,9 @@
         .workspaces {
             float: left;
             background-color: #111;
-            width: 10%;
+            width: 400px;
             min-width: 150px;
-            max-width: 350px;
+            max-width: 500px;
             height: 100%;
             min-height: 100%;
         }
@@ -25,7 +25,9 @@
             box-sizing: border-box;
             width: 100%;
             vertical-align: middle;
-            margin: 25px 0px;
+            margin: 0px;
+            padding: 13px 0px;
+            text-align: center;
         }
 
         .workspace-item-img {
@@ -50,25 +52,87 @@
             border: none;
             margin: 0px;
         }
+
+        .folders {
+            height: 100%;
+            float: right;
+            width: 250px;
+            background-color: #111;
+            border-left: solid 1px #222;
+            text-align: left;
+        }
+
+        .folder-item {
+            padding: 10px;
+        }
+
+        .folder-icon {
+            width: 16px;
+            height: 16px;
+            background-image: url('img/folder-closed.png');
+            background-repeat: no-repeat;
+            padding: 7px;
+        }
+
+        .folder-icon-selected {
+            width: 16px;
+            height: 16px;
+            background-image: url('img/folder-flat.png');
+            background-repeat: no-repeat;
+            padding: 7px;
+        }
+
+        .selected {
+            background-color: #000;
+        }
+
+        .task-item{
+            width: 100%;
+            padding:10px;
+        }
+
+        .task-item:hover{
+            background-color: #000;
+        }
+
+        .task-item-checkbox{
+            padding: 0px 5px;
+        }
+
+        .task-item-summary{
+            padding: 0px 5px;
+        }
+
+        .task-item-meta-duration{
+            padding 0px 5px; 
+            float: right;
+        }
     </style>
 </head>
 <body style="background-color: #222;">
     <div class="navbar1 workspaces">
+        <div class="folders">
+            <div class="folder-item"><span class="folder-icon"><img src="img/folder-closed.png" width="16" height="16" /></span>To Do Project</div>
+            <div class="folder-item selected"><span class="folder-icon-selected"><img src="img/folder-flat.png" width="16" height="16" /></span>Follow up with Boss</div>
+            <div class="folder-item"><span class="folder-icon"><img src="img/folder-closed.png" width="16" height="16" /></span>Follow up with Team</div>
+            <div class="folder-item"><span class="folder-icon"><img src="img/folder-closed.png" width="16" height="16" /></span>Coding Tasks</div>
+            <div class="folder-item"><span class="folder-icon"><img src="img/folder-closed.png" width="16" height="16" /></span>Client Project</div>
+            <div class="folder-item"><span class="folder-icon"><img src="img/folder-closed.png" width="16" height="16" /></span>Work Project</div>
+        </div>
         <div class="workspace-item">
-            <span class="workspace-item-img"><img src="img/personal-workspace-icon.png" width="50" height="50" /></span>
+            <span class="workspace-item-img"><img src="img/personal-workspace-icon.png" width="50" height="50" /></span><br />
             <span class="workspace-item-name">Personal</span>
         </div><hr />
-        <div class="workspace-item">
-            <span class="workspace-item-img"><img src="img/office-workspace-icon.png" width="50" height="50" /></span>
+        <div class="workspace-item selected">
+            <span class="workspace-item-img"><img src="img/office-workspace-icon.png" width="50" height="50" /></span><br />
             <span class="workspace-item-name">Work</span>
         </div><hr />
         <div class="workspace-item">
-            <span class="workspace-item-img"><img src="img/community-workspace-icon.png" width="50" height="50" /></span>
+            <span class="workspace-item-img"><img src="img/community-workspace-icon.png" width="50" height="50" /></span><br />
             <span class="workspace-item-name">Community</span>
-        </div>
+        </div><hr />
 
     </div>
-
 
     <div class="container">
         <main role="main" class="pb-3">
