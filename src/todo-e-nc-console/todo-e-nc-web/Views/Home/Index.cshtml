@@ -2,7 +2,21 @@
     ViewData["Title"] = "e nc To Do List";
 }
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
-</div>
+    <div class="text-center">
+        <h1 class="display-4">Welcome</h1>
+        <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+        <label id="async-reply"></label>
+        <button id="async-msg">Click me for IPC!</button>
+    </div>
+
+<script>
+    const { ipcRenderer } = require("electron");
+    document.getElementById("async-msg").addEventListener("click", () => {
+        ipcRenderer.send("async-msg", 'ping');
+    });
+
+    ipcRenderer.on('asynchronous-reply', (event, arg) => {
+        const message = 'Async message reply : ${arg}' + '<>' + arg ;
+        document.getElementById("async-reply").innerHTML = message;
+    });
+</script>
