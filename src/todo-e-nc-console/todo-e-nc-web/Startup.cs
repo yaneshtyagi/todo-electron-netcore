@@ -80,8 +80,8 @@ namespace todo_e_nc_web
                         new MenuItem {
                         Label = "Exit",
                         Click = () => {Electron.App.Exit(); }
-                        } 
-                    } 
+                        }
+                    }
                 },
 
                 new MenuItem
@@ -90,6 +90,19 @@ namespace todo_e_nc_web
                     Click = async () =>
                     {
                         await Electron.Dialog.ShowMessageBoxAsync("To Do List in Electron.NET. Version: 0.0.0");
+                    }
+                },
+                new MenuItem
+                {
+                    Label = "Tools",
+                    Submenu = new MenuItem[]
+                    {
+                        new MenuItem
+                        {
+                            Label = "Open Developer Tools",
+                            Accelerator = "CmdOrCtrl+I",
+                            Click = () => Electron.WindowManager.BrowserWindows.First().WebContents.OpenDevTools()
+                        }
                     }
                 }
             };
